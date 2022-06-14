@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="CongratulationDB.MainPage">
+
+
+    
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+        <BoxView Grid.ColumnSpan="2"  HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand"  x:Name="bdGradient" Scale="4" AnchorX="1" AnchorY="0">
+                <BoxView.Background>
+                    <LinearGradientBrush>
+                        <GradientStop Color="#3498db" Offset="0.1"/>
+                        <GradientStop Color="#9b59b6" Offset="0.3"/>
+                        <GradientStop Color="#3498db" Offset="0.6"/>
+                        <GradientStop Color="#9b59b6" Offset="1.0"/>
+                    </LinearGradientBrush>
+                </BoxView.Background>
+            </BoxView>
+
+
+        <Frame Grid.ColumnSpan="2" WidthRequest="300"  BackgroundColor="Transparent" VerticalOptions="Start" HorizontalOptions="Center">
+            <Button Text="Добавить контакт" Clicked="Button_Clicked" Margin="20,0,20,0" HeightRequest="50" TextColor="Black" BackgroundColor="White"/>
+        </Frame>
+        <Frame Grid.ColumnSpan="2" WidthRequest="300"  BackgroundColor="Transparent" VerticalOptions="Center" HorizontalOptions="Center">
+            <Button Text="Добавить поздравление" Clicked="Button_Clicked_2" Margin="20,0,20,0" HeightRequest="50" TextColor="Black" BackgroundColor="White"/>
+        </Frame>
+        <Frame Grid.ColumnSpan="2" WidthRequest="300"  BackgroundColor="Transparent" VerticalOptions="End" HorizontalOptions="Center">
+            <Button Text="Отправить поздравление" Clicked="Button_Clicked_1" Margin="20,0,20,0" HeightRequest="50" TextColor="Black" BackgroundColor="White"/>
+        </Frame>
+    </Grid>
+
+
+
+
+</ContentPage>
